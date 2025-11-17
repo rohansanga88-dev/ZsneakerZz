@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>zSneakerZz - Step Into Style</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: #0d0d0d;
+        color: white;
+    }
+
+    /* -------- NAVBAR -------- */
+    nav {
+        width: 100%;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(0,0,0,0.5);
+        position: fixed;
+        top: 0;
+        backdrop-filter: blur(10px);
+        z-index: 1000;
+    }
+
+    nav h1 {
+        font-size: 28px;
+        letter-spacing: 3px;
+        color: #ff4df0;
+        text-shadow: 0px 0px 10px #ff4df0;
+        margin: 0;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 25px;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #ff4df0;
+    }
+
+    /* -------- HERO SECTION -------- */
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 150px 50px 100px;
+        height: 100vh;
+        background: linear-gradient(135deg, #000, #320042);
+    }
+
+    .hero-text {
+        width: 50%;
+    }
+
+    .hero-text h2 {
+        font-size: 60px;
+        margin: 0;
+        line-height: 1.1;
+        font-weight: 800;
+    }
+
+    .hero-text p {
+        font-size: 20px;
+        margin: 20px 0 40px;
+    }
+
+    .btn {
+        background: #ff4df0;
+        padding: 15px 35px;
+        border-radius: 40px;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+        color: black;
+        transition: 0.3s;
+        text-decoration: none;
+    }
+
+    .btn:hover {
+        box-shadow: 0px 0px 15px #ff4df0;
+        transform: scale(1.05);
+    }
+
+    .hero img {
+        width: 45%;
+        filter: drop-shadow(0px 0px 20px #ff4df0);
+        animation: float 3s infinite ease-in-out;
+    }
+
+    @keyframes float {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-15px); }
+        100% { transform: translateY(0); }
+    }
+
+    /* -------- FEATURED SECTION -------- */
+    .section {
+        padding: 80px 50px;
+        text-align: center;
+    }
+
+    .section h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .section p {
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+
+    .products {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        background: #1a1a1a;
+        width: 300px;
+        border-radius: 20px;
+        padding: 20px;
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 0px 15px #ff4df0;
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .card h3 {
+        margin: 15px 0 10px;
+        font-size: 22px;
+    }
+
+    .card span {
+        color: #ff4df0;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    /* -------- FOOTER -------- */
+    footer {
+        text-align: center;
+        padding: 30px;
+        background: #111;
+        color: #ccc;
+        margin-top: 50px;
+    }
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h1>zSneakerZz</h1>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#featured">Sneakers</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+    <div class="hero-text">
+        <h2>STEP INTO<br>THE FUTURE</h2>
+        <p>Premium sneakers designed for comfort, speed, and unmatched style.  
+           Be bold. Be iconic. Be zSneakerZz.</p>
+        <a href="#featured" class="btn">Shop Now</a>
+    </div>
+
+    <!-- HERO IMAGE -->
+    <img src="https://images.unsplash.com/photo-1606813907291-5247fce4a315" alt="Sneaker">
+</section>
+
+<!-- FEATURED SNEAKERS -->
+<section class="section" id="featured">
+    <h2>Featured Sneakers</h2>
+    <p>Our latest premium drops are here. Limited edition. Next-level designs.</p>
+
+    <div class="products">
+
+        <!-- PRODUCT 1 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552" alt="Sneaker">
+            <h3>Phantom X</h3>
+            <span>₹6,499</span>
+        </div>
+
+        <!-- PRODUCT 2 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Sneaker">
+            <h3>Shadow Runner</h3>
+            <span>₹7,299</span>
+        </div>
+
+        <!-- PRODUCT 3 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1600180758890-6d9ad6f1e8e8" alt="Sneaker">
+            <h3>Storm Z+</h3>
+            <span>₹8,199</span>
+        </div>
+
+        <!-- PRODUCT 4 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f" alt="Sneaker">
+            <h3>GlowStrike Neon</h3>
+            <span>₹8,999</span>
+        </div>
+
+        <!-- PRODUCT 5 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1543508282-6319a3e2621f" alt="Sneaker">
+            <h3>Vortex Air</h3>
+            <span>₹9,499</span>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2025 zSneakerZz. All Rights Reserved.
+</footer>
+
+</body>
+</html>
