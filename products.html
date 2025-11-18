@@ -1,7 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DYH88KFZJ8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-DYH88KFZJ8', { 'debug_mode': true });
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5XVJ8RKM');</script>
+    <!-- End Google Tag Manager -->
+
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>zSneakerZz - Products</title>
 
 <style>
@@ -10,7 +28,6 @@
         font-family: 'Poppins', sans-serif;
         background: #0d0d0d;
         color: white;
-        text-align: center;
     }
 
     nav {
@@ -23,9 +40,15 @@
         position: fixed;
         top: 0;
         backdrop-filter: blur(10px);
+        z-index: 1000;
     }
 
-    nav h1 { color: #ff4df0; text-shadow: 0px 0px 10px #ff4df0; }
+    nav h1 {
+        font-size: 28px;
+        color: #ff4df0;
+        text-shadow: 0 0 10px #ff4df0;
+        margin: 0;
+    }
 
     nav a {
         color: white;
@@ -35,60 +58,78 @@
         transition: 0.3s;
     }
 
-    nav a:hover { color: #ff4df0; }
+    nav a:hover {
+        color: #ff4df0;
+    }
 
     .section {
-        padding: 150px 50px;
+        padding: 150px 50px 50px;
+        text-align: center;
     }
 
     h2 {
         font-size: 45px;
         color: #ff4df0;
-        margin-bottom: 40px;
-        text-shadow: 0px 0px 10px #ff4df0;
+        text-shadow: 0 0 15px #ff4df0;
     }
 
     .grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 30px;
-        padding: 20px;
+        gap: 25px;
+        margin-top: 40px;
     }
 
     .card {
         background: #1a1a1a;
-        padding: 20px;
         border-radius: 20px;
+        padding: 20px;
         transition: 0.3s;
     }
 
     .card:hover {
         transform: translateY(-10px);
-        box-shadow: 0 0 20px #ff4df0;
+        box-shadow: 0px 0px 20px #ff4df0;
     }
 
     .card img {
         width: 100%;
+        height: 250px;
+        object-fit: cover;
         border-radius: 15px;
     }
 
-    .btn {
-        background: #ff4df0;
-        padding: 10px 25px;
-        color: black;
-        border-radius: 30px;
-        font-weight: bold;
-        cursor: pointer;
-        text-decoration: none;
-        display: inline-block;
-        margin-top: 15px;
+    .card h3 {
+        margin: 10px 0;
+        font-size: 22px;
     }
 
-</style>
+    .btn {
+        padding: 10px 25px;
+        background: #ff4df0;
+        border-radius: 30px;
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 10px;
+    }
 
+    footer {
+        text-align: center;
+        padding: 30px;
+        background: #111;
+        color: #ccc;
+        margin-top: 50px;
+    }
+</style>
 </head>
 
 <body>
+
+<!-- GTM noscript -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XVJ8RKM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <nav>
     <h1>zSneakerZz</h1>
@@ -100,36 +141,104 @@
 </nav>
 
 <section class="section">
-    <h2>All Sneakers Collection</h2>
+    <h2>All Premium Sneakers</h2>
 
     <div class="grid">
 
+        <!-- Original 4 Products (Unchanged) -->
         <div class="card">
-            <img src="https://i.postimg.cc/02xP7jKP/sneaker1.jpg">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552">
             <h3>Classic Sneakers</h3>
             <a href="payment.html" class="btn">Buy Now</a>
         </div>
 
         <div class="card">
-            <img src="https://i.postimg.cc/JnRRBP7h/basketball.jpg">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
             <h3>Basketball Sneakers</h3>
             <a href="payment.html" class="btn">Buy Now</a>
         </div>
 
         <div class="card">
-            <img src="https://i.postimg.cc/zvFkgkRn/skate.jpg">
+            <img src="https://images.unsplash.com/photo-1600180758890-6d9ad6f1e8e8">
             <h3>Skateboard Sneakers</h3>
             <a href="payment.html" class="btn">Buy Now</a>
         </div>
 
         <div class="card">
-            <img src="https://i.postimg.cc/cJ1jk4GD/football.jpg">
+            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f">
             <h3>Football Sneakers</h3>
+            <a href="payment.html" class="btn">Buy Now</a>
+        </div>
+
+
+        <!-- 🔥 NEW 10 Sneakers Added -->
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3">
+            <h3>AirFlex Runner</h3>
+            <a href="payment.html" class="btn">Buy Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1528701800489-20be9f4f63f1">
+            <h3>Ultra Boost Pro</h3>
+            <a href="payment.html" class="btn">Buy Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a">
+            <h3>Neo Street X</h3>
+            <a href="payment.html" class="btn">Buy Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1539185441755-769473a23570">
+            <h3>HyperVolt Z</h3>
+            <a href="payment.html" class="btn">Buy Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772">
+            <h3>Alpha Glide</h3>
+            <a href="payment.html" class="btn">Buy Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1515859005217-8a1f08870f59">
+            <h3>RapidBoost M5</h3>
+            <a href="payment.html" class="btn">Buy Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1606813903361-48e8e7f6e90a">
+            <h3>Ignite Fury</h3>
+            <a href="payment.html" class="btn">Buy Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1511556615163-0fa6d7f6d3d2">
+            <h3>Night Blade X</h3>
+            <a href="payment.html" class="btn">Buy Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1582582621959-d2f52ffef9ae">
+            <h3>Storm Rider V2</h3>
+            <a href="payment.html" class="btn">Buy Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519741495352-2f6f2c3a1d9d">
+            <h3>Velocity AirMax</h3>
             <a href="payment.html" class="btn">Buy Now</a>
         </div>
 
     </div>
 </section>
+
+<footer>
+    © 2025 zSneakerZz. All Rights Reserved.
+</footer>
 
 </body>
 </html>
