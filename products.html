@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>zSneakerZz - Products</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: #0d0d0d;
+        color: white;
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(0,0,0,0.5);
+        position: fixed;
+        top: 0;
+        backdrop-filter: blur(10px);
+    }
+
+    nav h1 { color: #ff4df0; text-shadow: 0px 0px 10px #ff4df0; }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 25px;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+
+    nav a:hover { color: #ff4df0; }
+
+    .section {
+        padding: 150px 50px;
+    }
+
+    h2 {
+        font-size: 45px;
+        color: #ff4df0;
+        margin-bottom: 40px;
+        text-shadow: 0px 0px 10px #ff4df0;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .card {
+        background: #1a1a1a;
+        padding: 20px;
+        border-radius: 20px;
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 0 20px #ff4df0;
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .btn {
+        background: #ff4df0;
+        padding: 10px 25px;
+        color: black;
+        border-radius: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 15px;
+    }
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+    <h1>zSneakerZz</h1>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="products.html">Sneakers</a>
+        <a href="payment.html">Buy Now</a>
+    </div>
+</nav>
+
+<section class="section">
+    <h2>All Sneakers Collection</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="https://i.postimg.cc/02xP7jKP/sneaker1.jpg">
+            <h3>Classic Sneakers</h3>
+            <a href="payment.html" class="btn">Buy Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://i.postimg.cc/JnRRBP7h/basketball.jpg">
+            <h3>Basketball Sneakers</h3>
+            <a href="payment.html" class="btn">Buy Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://i.postimg.cc/zvFkgkRn/skate.jpg">
+            <h3>Skateboard Sneakers</h3>
+            <a href="payment.html" class="btn">Buy Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://i.postimg.cc/cJ1jk4GD/football.jpg">
+            <h3>Football Sneakers</h3>
+            <a href="payment.html" class="btn">Buy Now</a>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
