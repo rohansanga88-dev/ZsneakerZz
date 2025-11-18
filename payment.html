@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DYH88KFZJ8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-DYH88KFZJ8', { 'debug_mode': true });
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5XVJ8RKM');</script>
+    <!-- End Google Tag Manager -->
+
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Payment - zSneakerZz</title>
 
 <style>
     body {
-        font-family: 'Poppins';
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
         background: #0d0d0d;
         color: white;
         text-align: center;
@@ -14,19 +33,34 @@
 
     nav {
         width: 100%;
-        padding: 20px;
+        padding: 20px 50px;
         background: rgba(0,0,0,0.5);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         position: fixed;
         top: 0;
+        backdrop-filter: blur(10px);
     }
 
-    nav a { 
-        color: #ff4df0; 
-        margin: 15px; 
-        text-decoration: none; 
+    nav h1 {
+        color: #ff4df0;
+        text-shadow: 0 0 10px #ff4df0;
+        font-size: 28px;
     }
 
-    form {
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 25px;
+        font-size: 18px;
+    }
+
+    nav a:hover {
+        color: #ff4df0;
+    }
+
+    .container {
         margin-top: 150px;
         width: 40%;
         background: #1a1a1a;
@@ -34,52 +68,89 @@
         border-radius: 20px;
         margin-left: auto;
         margin-right: auto;
-        box-shadow: 0 0 20px #ff4df0;
+        box-shadow: 0 0 25px #ff4df0;
+    }
+
+    h2 {
+        color: #ff4df0;
+        font-size: 35px;
+        text-shadow: 0 0 15px #ff4df0;
     }
 
     input {
         width: 80%;
         padding: 12px;
-        margin: 10px;
-        border-radius: 10px;
+        margin: 12px;
+        border-radius: 12px;
         border: none;
+        font-size: 16px;
     }
 
     button {
         background: #ff4df0;
-        padding: 15px 35px;
-        border: none;
+        padding: 15px 40px;
         border-radius: 40px;
-        cursor: pointer;
+        border: none;
         color: black;
         font-size: 18px;
-        margin-top: 15px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    button:hover {
+        box-shadow: 0 0 15px #ff4df0;
+        transform: scale(1.05);
+    }
+
+    .payment-logos img {
+        width: 60px;
+        margin: 10px;
+        filter: drop-shadow(0 0 5px #ff4df0);
     }
 
 </style>
-
 </head>
 
 <body>
 
+<!-- GTM noscript -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XVJ8RKM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
 <nav>
-    <a href="index.html">Home</a>
-    <a href="products.html">Products</a>
+    <h1>zSneakerZz</h1>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+    </div>
 </nav>
 
-<form action="thankyou.html">
-    <h2 style="color:#ff4df0;">Payment Details</h2>
+<div class="container">
+    <h2>Payment Details</h2>
 
-    <input type="text" placeholder="Full Name" required><br>
-    <input type="email" placeholder="Email ID" required><br>
-    <input type="text" placeholder="Phone Number" required><br>
-    <input type="text" placeholder="Credit Card Number" required><br>
-    <input type="text" placeholder="Expiry Date (MM/YY)" required><br>
-    <input type="text" placeholder="CVV" required><br>
-    <input type="text" placeholder="Billing Address" required><br>
+    <!-- Payment Logos -->
+    <div class="payment-logos">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Mastercard-logo.svg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Rupay-Logo.png">
+    </div>
 
-    <button type="submit">Pay Now</button>
-</form>
+    <!-- Payment Form -->
+    <form action="thankyou.html">
+
+        <input type="text" placeholder="Full Name" required><br>
+        <input type="email" placeholder="Email ID" required><br>
+        <input type="text" placeholder="Phone Number" required><br>
+
+        <input type="text" placeholder="Credit Card Number" required><br>
+        <input type="text" placeholder="Expiry Date (MM/YY)" required><br>
+        <input type="text" placeholder="CVV" required><br>
+
+        <input type="text" placeholder="Billing Address" required><br>
+
+        <button type="submit">Pay Now</button>
+    </form>
+</div>
 
 </body>
 </html>
