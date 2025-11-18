@@ -117,6 +117,85 @@
         100% { transform: translateY(0); }
     }
 
+    .section {
+        padding: 80px 50px;
+        text-align: center;
+    }
+
+    .section h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .section p {
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+
+    .products {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        background: #1a1a1a;
+        width: 300px;
+        border-radius: 20px;
+        padding: 20px;
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 0px 15px #ff4df0;
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .card h3 {
+        margin: 15px 0 10px;
+        font-size: 22px;
+    }
+
+    .card span {
+        color: #ff4df0;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    /* ---------- MASONRY GRID ---------- */
+    .masonry-title {
+        text-align: center;
+        font-size: 40px;
+        margin-top: 50px;
+        color: #ff4df0;
+        text-shadow: 0px 0px 15px #ff4df0;
+    }
+
+    .masonry {
+        column-count: 4;
+        column-gap: 15px;
+        padding: 40px;
+    }
+
+    .masonry img {
+        width: 100%;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        break-inside: avoid;
+        filter: drop-shadow(0px 0px 10px #ff4df0);
+        transition: 0.3s;
+    }
+
+    .masonry img:hover {
+        transform: scale(1.05);
+    }
+
     footer {
         text-align: center;
         padding: 30px;
@@ -124,13 +203,16 @@
         color: #ccc;
         margin-top: 50px;
     }
+
 </style>
 </head>
 
 <body>
-<!-- GTM no-script -->
+
+<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XVJ8RKM"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End GTM -->
 
 <nav>
     <h1>zSneakerZz</h1>
@@ -141,15 +223,76 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 </nav>
 
+<!-- HERO SECTION -->
 <section class="hero" id="home">
     <div class="hero-text">
         <h2>STEP INTO<br>THE FUTURE</h2>
-        <p>Premium sneakers designed for comfort, speed & unmatched style.</p>
+        <p>Premium sneakers designed for comfort, speed, and unmatched style.</p>
         <a href="products.html" class="btn">Shop Now</a>
     </div>
 
     <img src="https://images.unsplash.com/photo-1606813907291-5247fce4a315" alt="Sneaker">
 </section>
+
+<!-- FEATURED SECTION (ORIGINAL) -->
+<section class="section" id="featured">
+    <h2>Featured Sneakers</h2>
+    <p>Our latest premium drops are here. Limited edition. Next-level designs.</p>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552">
+            <h3>Phantom X</h3>
+            <span>₹6,499</span>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
+            <h3>Shadow Runner</h3>
+            <span>₹7,299</span>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1600180758890-6d9ad6f1e8e8">
+            <h3>Storm Z+</h3>
+            <span>₹8,199</span>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f">
+            <h3>GlowStrike Neon</h3>
+            <span>₹8,999</span>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1543508282-6319a3e2621f">
+            <h3>Vortex Air</h3>
+            <span>₹9,499</span>
+        </div>
+
+    </div>
+</section>
+
+<!-- NEW MASONRY GRID SECTION -->
+<h2 class="masonry-title">Explore More Sneakers</h2>
+
+<div class="masonry">
+
+    <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3">
+    <img src="https://images.unsplash.com/photo-1528701800489-20be9f4f63f1">
+    <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a">
+    <img src="https://images.unsplash.com/photo-1539185441755-769473a23570">
+
+    <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772">
+    <img src="https://images.unsplash.com/photo-1515859005217-8a1f08870f59">
+    <img src="https://images.unsplash.com/photo-1606813903361-48e8e7f6e90a">
+    <img src="https://images.unsplash.com/photo-1511556615163-0fa6d7f6d3d2">
+
+    <img src="https://images.unsplash.com/photo-1582582621959-d2f52ffef9ae">
+    <img src="https://images.unsplash.com/photo-1519741495352-2f6f2c3a1d9d">
+
+</div>
 
 <footer>
     © 2025 zSneakerZz. All Rights Reserved.
